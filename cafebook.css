@@ -1,0 +1,139 @@
+body {
+    font-family: "Vazirmatn", sans-serif;
+    background: #f5f0e6;
+    margin: 0;
+    padding: 20px;
+    color: #3b2a1a;
+}
+
+.menu-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fdfaf5;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 20px 18px 26px;
+    position: relative;
+    overflow: hidden;
+}
+.logo-image{
+    width: 350px;
+}
+.div-logo-imag{
+    margin-right: -50px;
+    margin-bottom: -70px;
+    margin-top: -50px;
+
+}
+
+/* / نوار بالای شبیه عطف کتاب */ */
+.menu-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#d1b08a, #b58a5a);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    color: #4a2f1b;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    color: #7a5a3a;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #a07a52;
+}
+
+.section-title {
+    margin: 22px 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a2f1b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.section-title::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #c89b63;
+    border-radius: 999px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+@media (max-width: 480px) {
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.item-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 380px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-price {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8b5e34;
+}
+
+.item-desc {
+    font-size: 11px;
+    color: #7a6a58;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #4a2f1b;
+}
